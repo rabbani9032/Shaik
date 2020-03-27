@@ -45,11 +45,10 @@ export default class Game extends Component {
         const stpNum = this.state.stepNumber; 
         let status; 
         if (winner) {
-            status = 'Winner is ' + winner;
-        } 
-        if(stpNum >= 9 && !winner){
-            status = 'Match is Drawn Reset to continue'
-        } else {
+            status = 'Winner is ' + winner;            
+        } else  if (stpNum >= 9 && !winner){
+            status = 'Match is Drawn Reset to continue';
+        } else  if (stpNum < 9 && !winner){
             status = 'Next Player is : ' + (this.state.xIsNext ? 'X' : 'O');
         }
         return (
