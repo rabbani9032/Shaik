@@ -17,20 +17,3 @@
   color: #fff;
   padding: 10px 0;
 }
-
-table {
-  width: 50%;
-  text-align: center;
-  margin: 2% 25%;
-}
-th{
-  font-size: 22px;
-}
-table, th, td {
-  border: 1px solid #ccc;
-}
-
-img {
-  border-radius: 50%;
-  width: 25%;
-}
